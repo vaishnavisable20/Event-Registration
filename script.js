@@ -21,7 +21,7 @@ async function initRedirect() {
       setTimeout(() => {
         statusText.innerText = "Redirecting to registration...";
         window.location.href = eventData.registrationUrl;
-      }, 2000);
+      });
     } else {
       statusText.innerText = "This event is currently closed.";
       eventButton.classList.add("hidden");
@@ -37,3 +37,4 @@ async function initRedirect() {
 
 // Run the function when the page loads
 window.onload = initRedirect;
+
